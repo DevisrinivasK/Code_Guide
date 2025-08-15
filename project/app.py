@@ -1,9 +1,22 @@
-from flask import Flask, request, render_template, send_file
+# Refactored according to TASK.md:
+# - App creation moved to project/__init__.py as create_app()
+# - Route definitions moved to routes.py
+# - Database settings will be loaded from config/settings.py via app factory
+# - This file now only serves as a legacy placeholder
+
+# Legacy placeholder. All app creation and routes have been moved.
+# Please use manage.py as the entry point for the application.
+
+# For reference, see:
+# - project/__init__.py for app factory
+# - project/routes.py for route definitions
+
 import test5
 import test7
 import test8
 import test9
 import io
+from flask import Flask, request, render_template, send_file
 
 app = Flask(__name__)
 
